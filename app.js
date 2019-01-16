@@ -6,8 +6,9 @@ var mongoose = require("mongoose");
 app.use(express.static("public"));
 
 app.use(bodyparser.urlencoded({extended: true}));
-//mongoose.connect('mongodb://localhost:27017/campaign_db', { useNewUrlParser: true });
-mongoose.connect('mongodb://bivas:coldplay16@ds259154.mlab.com:59154/campaign_db', { useNewUrlParser: true });
+
+mongoose.connect(process.env.DATABASEURL, { useNewUrlParser: true });
+//mongoose.connect('mongodb://bivas:coldplay16@ds259154.mlab.com:59154/campaign_db', { useNewUrlParser: true });
 
 
 var campaignschema = new mongoose.Schema({
