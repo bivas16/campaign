@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Campaign Page</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+    </head>
+    <body>
+ 
+    <div class="ui fixed inverted menu">
+          <div class="ui container">
+              <div class="header item"><i class="code icon"></i>Campaign Site</div>
+              <a href="/" class="item">Home</a>
+              <a href="/campaigns/new" class="item">New Campaign</a>
+          </div>
+      </div>       
+   
+   <br> <br> <br> <br>     
+        
+<h1 class="ui center aligned header">
+     Create New Campaign 
+</h1>
+
+<div class="ui main text container segment">
+    
+<form  class="ui form" action="/campaigns" method="POST">
+       
+      <div class="field">
+             <input type="text" name="campaign[title]" placeholder= "Name of Campaign">
+         </div>
+         
+         <div class="field">
+             <input type="text" name="campaign[image]" placeholder= "image URL">
+         </div>
+         
+         <div class="field">
+             <input type="text" name="campaign[description]" placeholder= "description">
+         </div>
+         
+         <div class="field">
+             <input id="board" type="text" name="campaign[board]" placeholder= "Name of Board">
+         </div>
+         
+         <div class="field ui labeled input">
+             <div class="ui label">
+                 http://
+             </div>
+             <input type="text" name="campaign[website]" placeholder= "Name of Website">
+         </div>
+         
+         <div class="field">
+             <input type="number" name="campaign[pplparticipation]" placeholder= "People Participation">
+         </div>
+         
+         <div class="field">
+            <strong>Category:</strong><select name="campaign[category]">
+                <option>Select</option>
+                <option>Entertainment</option>
+                <option>Celebrity</option>
+                <option>Cars</option>
+                <option>Outing</option>
+                <option>Others</option>
+            </select>         
+     </div>
+         <div class="field">
+             <strong>Start date of Campaign:</strong><input type="date" name="campaign[startdate]" placeholder= "Start date of campaign">
+         </div>
+    
+        <div class="field">
+             <strong>End Date of Campaign:</strong><input type="date" name="campaign[enddate]" placeholder= "End date of Campaign">
+         </div>
+    
+        <div class="field">
+             <input type="number" name="campaign[pins]" placeholder= "Minimum number of pins">
+         </div>
+         
+         <div class="field">
+             <input type="number" name="campaign[followers]" placeholder= "Minimum number of followers">
+         </div>
+         
+         
+             <input class="ui green basic button" type="submit" value="Create Campaign">
+       
+    
+    
+</form>
+
+</div>
+
+</body>
+
+
+  
+
+</html>

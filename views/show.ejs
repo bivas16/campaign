@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Campaign Page</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+    </head>
+    <body>
+<div class="ui fixed inverted menu">
+          <div class="ui container">
+              <div class="header item"><i class="code icon"></i>Campaign Site</div>
+              <a href="/" class="item">Home</a>
+              <a href="/campaigns/new" class="item">New Campaign</a>
+          </div>
+      </div>
+<br><br> <br> <br>
+
+  <h1 class="ui center aligned header">
+    Campaign Details
+  </h1> 
+
+<div class="ui main text container segment">
+     
+     <div class="ui inverted segment">
+  <div class="ui inverted relaxed divided list">
+    <div class="item">
+      <div class="content">
+        <div class="header">Name of Campaign </div>
+         <%= campaign.title %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Description</div>
+        <%= campaign.description %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Board Name</div>
+        <%= campaign.board %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Image</div>
+        <img src="<%= campaign.image %>">
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Name of Website</div>
+        <%= campaign.website %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">People Participation</div>
+        <%= campaign.pplparticipation %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Number of pins</div>
+        <%= campaign.pins %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Start Date of Campaign</div>
+        <%= campaign.startdate %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">End date of Campaign</div>
+        <%= campaign.enddate %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Category of Campaign</div>
+        <%= campaign.category %>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <div class="header">Number of Followers</div>
+        <%= campaign.followers %>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+    
+    
+</div>
+
+</body>
+</html>

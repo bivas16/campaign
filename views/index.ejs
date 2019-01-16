@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Campaign Page</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+    </head>
+    <body>
+
+<div class="ui fixed inverted menu">
+          <div class="ui container">
+              <div class="header item"><i class="code icon"></i>Campaign Site</div>
+              <a href="/" class="item">Home</a>
+              <a href="/campaigns/new" class="item">New Campaign</a>
+          </div>
+      </div>
+<br>
+<br> <br> <br>
+<h1 class="ui center aligned header"> 
+     View All Created Campaigns 
+</h1>
+
+<% campaigns.forEach(function(campaign){ %>
+         <div class="ui main text container segment">
+            <h2> <%= campaign.title %></h2>
+            <img class="ui centered small image"src=" <%= campaign.image %>">
+            <a href="/campaigns/<%= campaign._id %>">More Info</a>
+         </div>
+         
+<% }); %>
+
+</body>
+</html>
